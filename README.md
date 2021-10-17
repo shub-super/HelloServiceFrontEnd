@@ -12,3 +12,11 @@ npm start
 Once the service is up the result can be viewed in at the browser on the below URL :
 
 http://localhost:3000
+
+
+Deploying the Application to Kubernates.
+
+1. Build the image with name "hello" --> docker build -t hello .
+2. Deploy in kubernates --> kubectl apply -f deployment.yaml
+
+Note : In Kubernates the applicatiion will be running on port 31000 not 3000.
